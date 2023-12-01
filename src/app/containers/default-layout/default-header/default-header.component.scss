@@ -1,0 +1,30 @@
+.bread {
+  background-color: #f1f1f1 !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+}
+.bread li {
+  display: inline !important;
+}
+
+.bread li + li:before {
+  content: ">" !important;
+  margin: 0 8px !important;
+  color: #666 !important;
+}
+
+.bread li a {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
+.bread li a:hover {
+  color: #ff0000 !important;
+}
+
+.bread .active {
+  color: #ff0000 !important;
+}
+.title{
+  color: #f1f1f1!important;
+}

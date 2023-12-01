@@ -1,0 +1,257 @@
+.part1 {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.content-container {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.image-container2 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image1 {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: #fff;
+  z-index: 2;
+  width: 250px;
+  height: 200px;
+}
+
+.image2 {
+  position: absolute;
+  bottom: -30px;
+  right: -130px;
+  width: 150%;
+  height: auto;
+  margin-left: 2rem;
+}
+.caja1 {
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  
+}
+
+.centered-div {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+
+
+.grid-item {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  width: 33.3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+  p{
+    font-size: 9px;
+  }
+}
+
+.image {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.valores{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.cuadro1{
+  width: 250px;
+  height: 200px;
+  background-image: linear-gradient(#5de078, #52afce);
+  position: absolute;
+  left: -210px;
+  top: 150px;
+  z-index: 3;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  h5{
+    font-weight: bold;
+    line-height: 1.5;
+  }
+}
+.cuadro2{
+  width: 250px;
+  height: 160px;
+  background-image: linear-gradient(#5de078, #52afce);
+  position: absolute;
+  right: -110px;
+  top: 280px;
+  z-index: -3;
+}
+.part3{
+  height: 70vh;
+  position: relative;
+}
+.caja3{
+  width: 350px;
+  height: 200px;
+  z-index: 3;
+  background-color: rgb(51,51,51);
+  position: absolute;
+  top: -40px;
+  left: 80px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+    h3{
+      font-weight: 800;
+      line-height: 1.5;
+    }
+  
+}
+.part4{
+  height: 100vh;
+  background-color: #ccc;
+  position: relative;
+  padding-top: 6rem;
+}
+.cir1{
+  clip-path: ellipse(84% 90% at 99% 98%);
+  background-image: linear-gradient(#5de078, #52afce);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+  right: 0;
+}
+.cir2{
+  clip-path: ellipse(64% 70% at 99% 98%);
+  background-color: #ccc;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+  right: 0;
+}
+
+.right{
+  width: 35%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 12px;
+  z-index: 4;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5); 
+  border-radius: 10px; 
+  h3{
+    color:#52afce;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    span{
+      color: #5de078;
+      font-weight: 800;
+    font-size: 1.6rem;
+    }
+  }
+  img{
+    margin-bottom: 30px;
+  }
+}
+.left{
+  width: 35%;
+  background-color: #fff;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding: 12px;
+  top: -190px;
+  left: 30px;
+  height: 100%;
+  img{
+    height: 220px;
+    width: 400px;
+    left: 90px;
+  }
+}
+.contenido{
+  justify-content: space-around;
+}
+.caja4{
+  background-image: linear-gradient(#5de078, #52afce);
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  z-index: 4;
+  right: -60px;
+  bottom: -290px;
+}
+.caja5{
+  background-image: linear-gradient(#5de078, #52afce);
+  position: absolute;
+  width: 100px;
+  height: 200px;
+}
+.part5{
+  background-image: url(../../../assets/images/quejas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+.despe{
+  background-image: linear-gradient(#5de078, #52afce);
+  width: 50%;
+  height: 250px;
+  top: -80px;
+  left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5); 
+  text-align: center;
+  color: #fff;
+  align-items: center;
+}

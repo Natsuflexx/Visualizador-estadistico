@@ -1,0 +1,21 @@
+:host {
+  ng-scrollbar {
+    --scrollbar-thumb-color: var(--cui-border-color, #999);
+    --scrollbar-track-color: var(--cui-body-color, #fff);
+    --scrollbar-hover-size: calc(var(--scrollbar-size) * 1.5);
+  }
+}
+.header{
+  background-image: linear-gradient(to right, #52afce,#5de078);
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5); 
+}
+.footer{
+  background-color: rgb(51, 51, 51);
+}
+.sidebar{
+  background-color: rgb(51, 51, 51);
+}
+.logo{
+  background-image: linear-gradient(to right,#5de078, #52afce);
+  
+}

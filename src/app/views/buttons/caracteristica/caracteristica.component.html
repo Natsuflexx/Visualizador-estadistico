@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center my-5">
+    <div class="card col-md-9">
+      <c-card-header>
+        <h5 class="text-center">Características</h5>
+      </c-card-header>
+      <div class="box">
+        <p class="text-center px-2">
+          Información crucial sobre el nivel de bienestar y calidad de vida de las personas,
+          y reflejan la diversidad de condiciones en las que viven las familias y 
+          son fundamentales para comprender las necesidades y desafíos que enfrentan 
+          en su entorno habitacional.
+        </p>
+        
+      </div>
+      <c-card-body class="text-center">
+        <table class="table">
+          <thead>
+            <tr class="title">
+              <th>Aspectos</th>
+              <th>Porcentaje</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let aspecto of aspecto; let i = index">
+              <td class="cell d-flex"> 
+                <span>{{ aspecto }} </span>
+                <img [src]="links(i)" alt="Icono" width="100" height="100">
+              </td>
+              <td class="porcent"><span>{{ caracter[i] }}%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </c-card-body>
+    </div>
+  </div>

@@ -1,0 +1,27 @@
+.card{
+    width: 90%;
+}
+.box {
+  position: relative;
+  background-color: #e6f7f2; /* Color de fondo del div */
+  padding: 20px;
+}
+
+.box::before,
+.box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Ajusta el tamaño del padding superior e inferior */
+}
+
+.box::before {
+  top: 0;
+  background-color: #81C784; /* Color del padding superior */
+}
+
+.box::after {
+  bottom: 0;
+  background-color: #81C784; /* Color del padding inferior */
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creditos</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../../assets/team/fondo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  span{
+    font-weight: 400;
+  }
+  #creditos {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h2 {
+    color: #333333;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    color: #555555;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 8px;
+    animation: slideInRight 0.5s ease-in-out;
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .creadores {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .burbuja {
+    width: 30%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 0.5s ease-in-out;
+  }
+
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .burbuja img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .burbuja img :hover{
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .burbuja h4 {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .burbuja p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  </style>
+</head>
+<body>
+  <section id="creditos">
+    <h3 class="text-center">Objetivo</h3>
+   
+    <p>El objetivo principal de este proyecto es crear un visualizador estadístico que brinde información sobre los indicadores de hogar y vivienda en México. La información estadística utilizada es extraída de la página oficial del INEGI (Instituto Nacional de Estadística y Geografía).</p>
+    
+    <p>El propósito de este visualizador es facilitar el acceso y comprensión de dicha información a la población en general. Mediante una presentación amigable y visualmente atractiva, se busca proporcionar estadísticas relevantes de manera clara y accesible.</p>
+  
+    <h3 class="text-center">Equipo de Desarrollo</h3>
+    <div class="creadores">
+      <div class="burbuja">
+        <img src="../../../assets/team/helen.jpg" alt="Analista">
+        <h4>Helen Carpio</h4>
+        <p>Analista.</p>
+      </div>
+      
+      <div class="burbuja burbuja-central">
+        <img src="../../../assets/team/gab.jpg" alt="Programador">
+        <h4>Gabriel A. Rocha</h4>
+        <p>Programador.</p>
+      </div>
+      
+      <div class="burbuja">
+        <img src="../../../assets/team/pau.jpg" alt="Diseñadora">
+        <h4>Paulina Basurto</h4>
+        <p>Diseñadora.</p>
+      </div>
+    </div>
+    <section class="my-3" id="agradecimientos">
+      <h3 class="text-center">Agradecimientos</h3>
+      <p>Queremos expresar nuestro más sincero agradecimiento al <strong>Dr. Humberto Martínez Bautista</strong>, nuestro mentor y cliente, por su invaluable orientación y apoyo a lo largo de todo el proceso de desarrollo de este proyecto. Su conocimiento y retroalimentación fueron fundamentales para la creación de esta primera versión del producto.</p>
+  
+      <p>También deseamos agradecer al <strong>Mtro. Israel Augusto Manzano Martínez</strong> por su colaboración y aporte en el despliegue de la aplicación. Su experiencia y apoyo técnico fueron de gran valor para el éxito de este proyecto.</p>
+    </section>
+  
+  
+  
+  </section>
+
+</body>
+</html>

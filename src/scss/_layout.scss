@@ -1,0 +1,36 @@
+.wrapper {
+  width: 100%;
+  @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
+  @include ltr-rtl("padding-right", var(--cui-sidebar-occupy-end, 0));
+  will-change: auto;
+  @include transition(padding .15s);
+}
+.bread {
+  background-color: #f1f1f1 !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+  text-decoration: none !important;
+}
+.bread li {
+  display: inline !important;
+  text-decoration: none !important;
+}
+
+.bread li + li:before {
+  content: ">" !important;
+  margin: 0 8px !important;
+  color: #666 !important;
+}
+
+.bread li a {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
+.bread li a:hover {
+  color: #0400ff !important;
+}
+
+.bread .active {
+  color: #0400ff !important;
+}

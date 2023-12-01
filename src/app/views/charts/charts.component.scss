@@ -1,0 +1,62 @@
+.bodys {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f9f1; /* Tonalidad verde claro */
+  }
+  
+  .container {
+    text-align: center;
+    color: #1b4965; /* Azul claro */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown span {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+  }
+  
+  /* Estilos adicionales para la apariencia del contador de tiempo (opcional) */
+  
+  /* Estilo para los números del contador */
+  .countdown span {
+    background-color: #1b4965; /* Azul claro */
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Estilo para los dos puntos del contador */
+  .countdown span::after {
+    content: ":";
+    margin-left: 0.25rem;
+  }
+  
+  /* Estilo para el fondo del contador */
+ /* .countdown::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #1b4965; 
+  }*/

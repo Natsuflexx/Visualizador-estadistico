@@ -1,0 +1,102 @@
+.pie{
+    max-width: 350px;
+}
+.caja{
+    padding-left: 90px;
+}
+
+/* Estilos de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px !important;
+    text-align: center!important;
+    border: 1px solid #ddd!important;
+  }
+  
+  th {
+    background-color: #f2f2f2!important;
+  }
+  
+  /* Estilos de los deciles */
+  .decil1 {
+    background-color: #B3E5FC;
+    color: #000000;
+  }
+  
+  .decil2 {
+    background-color: #C8E6C9;
+    color: #000000;
+  }
+  
+  .decil3 {
+    background-color: #81D4FA;
+    color: #000000;
+  }
+  
+  .decil4 {
+    background-color: #A5D6A7;
+    color: #000000;
+  }
+  
+  .decil5 {
+    background-color: #4FC3F7;
+    color: #000000;
+  }
+  
+  .decil6 {
+    background-color: #81C784;
+    color: #ffffff;
+  }
+  
+  .decil7 {
+    background-color: #29B6F6;
+    color: #ffffff;
+  }
+  
+  .decil8 {
+    background-color: #66BB6A;
+    color: #ffffff;
+  }
+  
+  .decil9 {
+    background-color: #03A9F4;
+    color: #ffffff;
+  }
+  
+  .decil10 {
+    background-color: #4CAF50;
+    color: #ffffff;
+  }
+
+
+
+  .box {
+    position: relative;
+    padding: 20px 0; /* Padding superior e inferior */
+    background-color: #e6f7f2;
+  }
+
+  .box::before,
+  .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px; /* Ajusta el tamaño del padding lateral */
+  }
+
+  .box::before {
+    left: 0;
+    background-color: #81C784; /* Color del padding izquierdo */
+  }
+
+  .box::after {
+    right: 0;
+    background-color: #81C784; /* Color del padding derecho */
+  }
+
+

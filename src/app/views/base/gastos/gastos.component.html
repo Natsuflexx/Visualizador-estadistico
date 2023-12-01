@@ -1,0 +1,144 @@
+
+
+<div class="d-flex justify-content-center my-5">
+  <div class="card col-md-9">
+    <c-card-header>
+      <h5 class="text-center">Ingresos trimestrales</h5>
+    </c-card-header>
+    <div class="box">
+      <p class="text-center px-2">
+        Cantidad de dinero que una persona o un hogar gana durante un período de tres meses.
+        Por otro lado, un "decil" es una medida estadística utilizada para dividir una población 
+        en diez grupos iguales, ordenados de menor a mayor. Cada decil representa el 10% de la 
+        población total.
+      </p>
+      
+    </div>
+    <c-card-body class="text-center">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Decil</th>
+            <th *ngFor="let periodo of periodo">{{ periodo }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let decil of [decil1, decil2, decil3, decil4, decil5, decil6, decil7, decil8, decil9, decil10]; let i = index">
+            <td [ngClass]="'decil' + (i + 1)"> {{ etiquetadecil[i] }}</td>
+            <td *ngFor="let dato of decil">{{ dato }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </c-card-body>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 my-5 justify-content-center caja">
+      <c-card class="pie">
+        <c-card-header class="text-center">
+          <h3>2016</h3>
+        </c-card-header>
+        <c-card-body>
+          <c-chart type="pie" [data]="chartPieData1"></c-chart>
+        </c-card-body>
+      </c-card>
+    </div>
+    <div class="col-md-6 my-5  justify-content-center caja">
+      <c-card class="pie">
+        <c-card-header class="text-center">
+          <h3>2018</h3>
+        </c-card-header>
+        <c-card-body>
+          <c-chart type="pie" [data]="chartPieData2"></c-chart>
+        </c-card-body>
+      </c-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 my-5  justify-content-center caja">
+      <c-card class="pie">
+        <c-card-header class="text-center">
+          <h3>2020</h3>
+        </c-card-header>
+        <c-card-body>
+          <c-chart type="pie" [data]="chartPieData3"></c-chart>
+        </c-card-body>
+      </c-card>
+    </div>
+    <div class="col-md-6 my-5  justify-content-center caja">
+      <c-card class="pie">
+        <c-card-header class="text-center">
+          <h3>2022</h3>
+        </c-card-header>
+        <c-card-body>
+          <c-chart type="pie" [data]="chartPieData4"></c-chart>
+        </c-card-body>
+      </c-card>
+    </div>
+  </div>
+</div>
+
+<div class="card my-3">
+  <c-card-header>
+    <h5 class="text-center">Gastos</h5>
+  </c-card-header>
+  <div class="box">
+    <p class="text-center px-2">
+      Ofrecen una visión detallada de cómo las familias mexicanas utilizan su 
+      dinero para satisfacer sus necesidades y preferencias, y son una herramienta 
+      importante para comprender la economía y la sociedad del país.
+    </p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 justify-content-center  my-4">
+      <div class="card">
+        <c-card-body>
+          <c-chart class="chart" type="bar" [data]="chartBarData1"></c-chart>
+        </c-card-body>
+      </div>
+    </div>
+    <div class="col-md-6 justify-content-center  my-4">
+      <div class="card">
+        <c-card-body>
+          <c-chart class="chart" type="bar" [data]="chartBarData2"></c-chart>
+        </c-card-body>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 justify-content-center  my-4">
+      <div class="card">
+        <c-card-body>
+          <c-chart class="chart" type="bar" [data]="chartBarData3"></c-chart>
+        </c-card-body>
+      </div>
+    </div>
+    <div class="col-md-6 justify-content-center  my-4">
+      <div class="card">
+        <c-card-body>
+          <c-chart class="chart" type="bar" [data]="chartBarData4"></c-chart>
+        </c-card-body>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 justify-content-center  my-4">
+      <div class="card">
+        <c-card-body>
+          <c-chart class="chart" type="bar" [data]="chartBarData5"></c-chart>
+        </c-card-body>
+      </div>
+    </div>
+    <div class="col-md-6 justify-content-center  my-4">
+      <div class="card">
+        <c-card-body>
+          <c-chart class="chart" type="bar" [data]="chartBarData6"></c-chart>
+        </c-card-body>
+      </div>
+    </div>
+  </div>
+</div>
