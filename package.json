@@ -53,6 +53,7 @@
     "@types/jasmine": "^4.3.5",
     "@types/lodash-es": "^4.17.9",
     "@types/node": "^18.17.14",
+    "angular-cli-ghpages": "^0.6.2",
     "jasmine-core": "^5.1.1",
     "karma": "~6.4.2",
     "karma-chrome-launcher": "~3.2.0",
