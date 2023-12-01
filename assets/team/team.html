@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuadrícula de Fotos Aesthetic</title>
+  <style>
+   .team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  background-image: url("fondo.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.team-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+
+.team-letter {
+  display: inline-block;
+  margin-right: 5px;
+  color: antiquewhite;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: letter-animation 1s forwards;
+  animation-delay: calc(var(--delay) * 0.15s);
+}
+
+@keyframes letter-animation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-letter:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  background-color: #ffcc00;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underline-animation 1s infinite;
+}
+
+@keyframes underline-animation {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-item {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+@keyframes blur-animation {
+  from {
+    filter: grayscale(0%) blur(0px);
+  }
+  to {
+    filter: grayscale(100%) blur(5px);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="team-container">
+    <h2 class="team-title">
+      <span class="team-letter">T</span>
+      <span class="team-letter">e</span>
+      <span class="team-letter">a</span>
+      <span class="team-letter">m</span>
+      <span class="team-letter"> </span>
+      <span class="team-letter">A</span>
+      <span class="team-letter">e</span>
+      <span class="team-letter">s</span>
+      <span class="team-letter">t</span>
+      <span class="team-letter">h</span>
+      <span class="team-letter">e</span>
+      <span class="team-letter">t</span>
+      <span class="team-letter">i</span>
+      <span class="team-letter">c</span>
+    </h2>
+    <div class="image-container">
+      <div class="image-item">
+        <img src="helen.jpg" alt="Imagen 1">
+      </div>
+      <div class="image-item">
+        <img src="pau.jpg" alt="Imagen 2">
+      </div>
+      <div class="image-item">
+        <img src="gab.jpg" alt="Imagen 3">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
